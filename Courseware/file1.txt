@@ -1,0 +1,10 @@
+#include <iostream.h> 
+#include <fstream.h> 
+int main() 
+{ char ch; 
+  ifstream fin("file1.txt");
+  ofstream fout("file2.txt");
+  if(!fin)  { cout<<"cannot open file1!";  return 1; }
+  if(!fout) { cout<<"cannot open file2!";  return 2; } 
+  cout<<"file1.txt:"<<endl;
+

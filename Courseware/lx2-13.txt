@@ -1,0 +1,30 @@
+#include <iostream.h>
+#include <iomanip.h>
+void main( )
+{   int n;
+    do{    
+        cout<<"输入一个自然数：";
+		cin>>n;
+	}while(n<=0);
+	int m,k,j,l,i;
+	j=n*n*n;
+	for (m=1; m<=j;m+=2)
+    { 
+		l=0;
+		i=0;
+		do{
+			l+=m+i*2;			
+			i++;
+			//cout<<l<<endl;
+		}while(l<j);
+		if(l==j)
+		{
+			cout<<setw(5)<<n<<'*'<<n<<'*'<<n<<'='<<j<<'=';
+			for(k=0;k<i-1;k++)
+		     cout<<m+k*2<<'+';
+			cout<<m+k*2<<endl;
+            //break; 
+
+		}
+	}
+}

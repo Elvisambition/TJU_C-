@@ -1,0 +1,3 @@
+The contents of the file:
+  OOP is not difficult to learn,
+  as long as you have this book.
